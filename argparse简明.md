@@ -541,6 +541,21 @@ else:
 
 ```
 注意下面的帮助信息，`[-v | -q]`表明了可以使用`-v`或者`-q`，但是不能同时使用。
+```
+$ python prog.py --help
+usage: prog.py [-h] [-v | -q] x y
+
+calculate X to the power of Y
+
+positional arguments:
+  x              the base
+  y              the exponent
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose
+  -q, --quiet
+```
 #官方文档内容
 ##1、创建一个解析器
 ###<font color = black>使用argparse的第一步是创建一个ArgumentParser对象：
